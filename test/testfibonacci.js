@@ -13,4 +13,8 @@ describe("Fibonacci test-first tests", () => {
   it("fibonacci(3) == 2", () => {
     assert.equal(fibonacci(3), 2);
   });
+
+  it("fibonacci(-3) == Error", () => {
+    assert.equal(fibonacci(-3), Error);
+  });
 });

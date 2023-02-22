@@ -1,7 +1,9 @@
 function fibonacci(n) {
-  if (n <= 1) {
+  if (n < 0) {
+    throw "Fibonacci is defined for non-negative numbers.";
+  } else if (n <= 1) {
     return n;
-  }
+  } 
 
   let prev = 0;
   let curr = 1;
@@ -18,5 +20,5 @@ function fibonacci(n) {
 // for (let i = 0; i < 10; i++) {
 //   console.log(fibonacci(i));
 // }
-
+// console.log(fibonacci(-1));
 module.exports = fibonacci;
